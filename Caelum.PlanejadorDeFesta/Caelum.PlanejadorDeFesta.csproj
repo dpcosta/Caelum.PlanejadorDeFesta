@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FestaAniversario.cs" />
+    <Compile Include="FestaNoturna.cs" />
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
