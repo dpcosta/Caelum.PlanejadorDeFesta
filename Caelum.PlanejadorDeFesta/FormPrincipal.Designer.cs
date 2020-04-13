@@ -33,7 +33,7 @@
             this.chkTematica = new System.Windows.Forms.CheckBox();
             this.chkBebidas = new System.Windows.Forms.CheckBox();
             this.btnCalcFestaNoturna = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numConvidadosFestaNoturna = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
@@ -44,7 +44,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numConvidadosFestaNoturna)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numConvidadosAniversario)).BeginInit();
             this.SuspendLayout();
@@ -66,7 +66,7 @@
             this.tabPage1.Controls.Add(this.chkTematica);
             this.tabPage1.Controls.Add(this.chkBebidas);
             this.tabPage1.Controls.Add(this.btnCalcFestaNoturna);
-            this.tabPage1.Controls.Add(this.numericUpDown1);
+            this.tabPage1.Controls.Add(this.numConvidadosFestaNoturna);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
@@ -108,19 +108,19 @@
             this.btnCalcFestaNoturna.Text = "Calcular";
             this.btnCalcFestaNoturna.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown1
+            // numConvidadosFestaNoturna
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(25, 44);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.numConvidadosFestaNoturna.Location = new System.Drawing.Point(25, 44);
+            this.numConvidadosFestaNoturna.Margin = new System.Windows.Forms.Padding(4);
+            this.numConvidadosFestaNoturna.Minimum = new decimal(new int[] {
             5,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(137, 22);
-            this.numericUpDown1.TabIndex = 1;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.numConvidadosFestaNoturna.Name = "numConvidadosFestaNoturna";
+            this.numConvidadosFestaNoturna.Size = new System.Drawing.Size(137, 22);
+            this.numConvidadosFestaNoturna.TabIndex = 1;
+            this.numConvidadosFestaNoturna.Value = new decimal(new int[] {
             5,
             0,
             0,
@@ -239,7 +239,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numConvidadosFestaNoturna)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numConvidadosAniversario)).EndInit();
@@ -255,7 +255,7 @@
         private System.Windows.Forms.CheckBox chkTematica;
         private System.Windows.Forms.CheckBox chkBebidas;
         private System.Windows.Forms.Button btnCalcFestaNoturna;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numConvidadosFestaNoturna;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textoBolo;
         private System.Windows.Forms.Label label3;
