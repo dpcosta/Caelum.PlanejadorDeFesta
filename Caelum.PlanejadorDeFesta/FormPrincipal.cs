@@ -40,23 +40,18 @@ namespace Caelum.PlanejadorDeFesta
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int qtdeConvidados = Convert.ToInt32(numConvidadosAniversario.Value);
-            string texto = textoBolo.Text;
-            bool tema = chkTemaAniversario.Checked;
-
-            decimal custoComida = qtdeConvidados * 25.0M;
-            decimal custoBebida = qtdeConvidados * 5.0M;
-            decimal custoTematica = tema ? (qtdeConvidados * 15.0M) + 50.0M : (qtdeConvidados * 7.5M) + 30.0M;
-            decimal custoLetras = texto.Length * 0.25M;
-            decimal custoBolo = qtdeConvidados >= 8 ? 75.0M + custoLetras : 40.0M + custoLetras;
-            decimal custoTotal = custoComida + custoBebida + custoTematica + custoBolo;
+            FestaAniversario aniversario = new FestaAniversario(
+                Convert.ToInt32(numConvidadosAniversario.Value), 
+                textoBolo.Text, 
+                chkTemaAniversario.Checked);
 
             string mensagem = $@"
-                O custo total da festa de aniversário R$ {custoTotal:0.00}
-                Comidas: {custoComida:0.00}
-                Bebidas: {custoBebida:0.00}
-                Temática: {custoTematica:0.00}
-                Bolo: {custoBolo:0.00}
+                O custo total da festa de aniversário R$ {aniversario.CustoTotal:0.00}
+                
+                Comidas: {aniversario.CustoComida:0.00}
+                Bebidas: {aniversario.CustoBebida:0.00}
+                Temática: {aniversario.CustoTematica:0.00}
+                Bolo: {aniversario.CustoBolo:0.00}
             ";
 
             MessageBox.Show(mensagem);
