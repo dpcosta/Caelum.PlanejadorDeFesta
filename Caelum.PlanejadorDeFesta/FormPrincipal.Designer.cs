@@ -107,6 +107,7 @@
             this.btnCalcFestaNoturna.TabIndex = 2;
             this.btnCalcFestaNoturna.Text = "Calcular";
             this.btnCalcFestaNoturna.UseVisualStyleBackColor = true;
+            this.btnCalcFestaNoturna.Click += new System.EventHandler(this.btnCalcFestaNoturna_Click);
             // 
             // numConvidadosFestaNoturna
             // 
@@ -162,6 +163,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "Calcular";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textoBolo
             // 
