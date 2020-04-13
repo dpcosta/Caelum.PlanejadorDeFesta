@@ -6,19 +6,15 @@ using System.Threading.Tasks;
 
 namespace Caelum.PlanejadorDeFesta
 {
-    public class FestaAniversario
+    public class FestaAniversario : Festa
     {
 
-        public FestaAniversario(int qtde, string texto, bool tema)
+        public FestaAniversario(int qtde, string texto, bool tema) : base(qtde, tema)
         {
-            QtdeConvidados = qtde;
             TextoBolo = texto;
-            Tematica = tema;
         }
 
-        public int QtdeConvidados { get;}
         public string TextoBolo { get; }
-        public bool Tematica { get; }
 
         public decimal CustoBolo
         {
@@ -29,9 +25,6 @@ namespace Caelum.PlanejadorDeFesta
             }
         }
 
-        public decimal CustoComida => QtdeConvidados * 25.0M;
-        public decimal CustoBebida => QtdeConvidados * 5.0M;
-        public decimal CustoTematica => Tematica ? (QtdeConvidados * 15.0M) + 50.0M : (QtdeConvidados * 7.5M) + 30.0M;
-        public decimal CustoTotal => CustoComida + CustoBebida + CustoTematica + CustoBolo;
+        public override decimal CustoTotal => CustoComida + CustoBebida + CustoTematica + CustoBolo;
     }
 }
